@@ -1,25 +1,35 @@
-import logo from './logo.svg';
+import React, { useState } from 'react';
 import './App.css';
+import '../src/components/CardListStyle.css';
 
-function App() {
+import SideNav from './components/SideNav';
+import Header from './components/Header';
+import CardList from './components/CardList';
+import CustomerCard from './components/CustomerCard';
+import OverviewCard from './components/OverviewCard';
+import Table from './components/Table';
+
+const App = () => {
+  const [searchTerm, setSearchTerm] = useState('');
+
+  const handleSearch = (term) => {
+    setSearchTerm(term);
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      <SideNav />
+      <div className="main-content">
+        <Header onSearch={handleSearch} />
+        <CardList searchTerm={searchTerm} />
+        <div className='card-list'>
+          <OverviewCard/>
+          <CustomerCard/>
+        </div>
+        <Table/>
+      </div>
     </div>
   );
-}
+};
 
 export default App;

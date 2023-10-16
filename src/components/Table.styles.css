@@ -1,0 +1,9 @@
+
+.custom-card {
+  display: flex;
+  padding: 20px;
+}
+.card-img {
+  flex: 0 0 30%;
+  margin-right: 0px;
+}

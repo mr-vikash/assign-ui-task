@@ -1,0 +1,40 @@
+.side-nav {
+    width: 200px;
+    height: 102vh;
+    background-color: #040440;
+    color: white;
+    padding: 20px;
+  }
+  
+  .side-nav ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .side-nav li {
+    margin-bottom: 10px;
+    font-size: 18px;
+  }
+  
+  .side-nav a {
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+  }
+  
+  .side-nav a:hover {
+    color: #ffc107; /* Change to your desired hover color */
+  }
+  
+  .side-nav a svg {
+    margin-left: 5px;
+  }
+  .nav-item {
+    color: grey; /* Set default text color to grey */
+    transition: color 0.3s; /* Add transition for smooth color change */
+  }
+  
+  .nav-item:hover {
+    color: white; /* Change text color to white on hover */
+  }
