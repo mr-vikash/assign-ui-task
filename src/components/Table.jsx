@@ -3,7 +3,7 @@ import './Table.styles.css';
 const Table = () => {
     return (
 
-        <div className="card" style={{ width: "1145px", height: "200px" }}>
+        <div className="card" style={{ width: "1145px", height: "217px" }}>
             < div style={{ display: "flex", flexDirection: "row" }}>
                 <h3 style={{ margin: "2px",paddingLeft: "10px" }}>Product Sell</h3>
                 <h3 style={{ margin: "2px", color: "GrayText", fontWeight:"lighter", paddingLeft: "705px",fontSize:"12px" }}><FaSearch/>Search</h3>
